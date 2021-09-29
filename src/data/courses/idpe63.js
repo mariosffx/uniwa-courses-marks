@@ -1,6 +1,7 @@
-const oldIdpe = [
+const idpe63 = [
   {
     name: 'ΜΑΘΗΜΑΤΙΚΑ I',
+    program: 'idpe63',
     id: '101',
     semester: 1,
     grade: 9,
@@ -8,6 +9,7 @@ const oldIdpe = [
   },
   {
     name: 'ΦΥΣΙΚΗ Ι',
+    program: 'idpe63',
     id: '102',
     semester: 1,
     grade: 9,
@@ -15,6 +17,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΙΣΑΓΩΓΗ ΣΤΗΝ ΕΠΙΣΤΗΜΗ ΚΑΙ ΤΗΝ ΤΕΧΝΟΛΟΓΙΑ ΤΩΝ ΥΠΟΛΟΓΙΣΤΩΝ',
+    program: 'idpe63',
     id: '103',
     semester: 1,
     grade: 6.9,
@@ -22,6 +25,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΙΚΟ ΣΧΕΔΙΟ',
+    program: 'idpe63',
     id: '104',
     semester: 1,
     grade: 5.6,
@@ -29,6 +33,7 @@ const oldIdpe = [
   },
   {
     name: 'ΧΗΜΕΙΑ Ι',
+    program: 'idpe63',
     id: '105',
     semester: 1,
     grade: '-',
@@ -36,6 +41,7 @@ const oldIdpe = [
   },
   {
     name: 'ΗΛΕΚΤΡΙΚΑ ΚΥΚΛΩΜΑΤΑ',
+    program: 'idpe63',
     id: '106',
     semester: 1,
     grade: 7.4,
@@ -43,6 +49,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΠΙΣΤΗΜΗ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ ΥΛΙΚΩΝ',
+    program: 'idpe63',
     id: '107',
     semester: 1,
     grade: 5,
@@ -50,6 +57,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΑΘΗΜΑΤΙΚΑ ΙΙ',
+    program: 'idpe63',
     id: '201',
     semester: 2,
     grade: 6,
@@ -57,6 +65,7 @@ const oldIdpe = [
   },
   {
     name: 'ΦΥΣΙΚΗ ΙΙ',
+    program: 'idpe63',
     id: '202',
     semester: 2,
     grade: 9,
@@ -64,6 +73,7 @@ const oldIdpe = [
   },
   {
     name: 'ΑΛΓΟΡΙΘΜΟΙ ΚΑΙ ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ',
+    program: 'idpe63',
     id: '203',
     semester: 2,
     grade: 5,
@@ -71,6 +81,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΙΚΗ ΜΗΧΑΝΙΚΗ Ι',
+    program: 'idpe63',
     id: '204',
     semester: 2,
     grade: '-',
@@ -78,12 +89,14 @@ const oldIdpe = [
   },
   {
     name: 'ΧΗΜΕΙΑ ΙΙ',
+    program: 'idpe63',
     id: '205',
     semester: 2,
     grade: '-',
     passes: ['2004'],
   },
   {
+    program: 'idpe63',
     id: '206',
     name: 'ΣΥΣΤΗΜΑΤΑ ΜΕΤΡΗΣΕΩΝ',
     semester: 2,
@@ -91,6 +104,7 @@ const oldIdpe = [
     passes: ['2005'],
   },
   {
+    program: 'idpe63',
     id: '207',
     name: 'ΣΧΕΔΙΑΣΗ ΚΑΙ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΒΙΟΜΗΧΑΝΙΚΩΝ ΠΑΡΑΓΩΓΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ',
     semester: 2,
@@ -99,6 +113,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΑΘΗΜΑΤΙΚΑ ΙΙΙ',
+    program: 'idpe63',
     id: '301',
     semester: 3,
     grade: '-',
@@ -106,6 +121,7 @@ const oldIdpe = [
   },
   {
     name: 'ΠΙΘΑΝΟΤΗΤΕΣ - ΣΤΑΤΙΣΤΙΚΗ. ΕΙΣΑΓΩΓΗ ΣΤΗ ΣΤΟΧΑΣΤΙΚΗ ΑΝΑΛΥΣΗ',
+    program: 'idpe63',
     id: '302',
     semester: 3,
     grade: 8,
@@ -113,6 +129,7 @@ const oldIdpe = [
   },
   {
     name: 'CAD/CAM',
+    program: 'idpe63',
     id: '303',
     semester: 3,
     grade: 5,
@@ -120,6 +137,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΙΚΗ ΜΗΧΑΝΙΚΗ ΙΙ',
+    program: 'idpe63',
     id: '304',
     semester: 3,
     grade: '-',
@@ -127,6 +145,7 @@ const oldIdpe = [
   },
   {
     name: 'ΥΛΙΚΑ Ι',
+    program: 'idpe63',
     id: '305',
     semester: 3,
     grade: 5,
@@ -134,6 +153,7 @@ const oldIdpe = [
   },
   {
     name: 'ΗΛΕΚΤΡΟΝΙΚΑ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '306',
     semester: 3,
     grade: 7,
@@ -141,6 +161,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΗΜΑΤΑ ΚΑΙ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '307',
     semester: 3,
     grade: '-',
@@ -148,6 +169,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΤΟΙΧΕΙΑ ΜΗΧΑΝΩΝ',
+    program: 'idpe63',
     id: '401',
     semester: 4,
     grade: 5,
@@ -155,6 +177,7 @@ const oldIdpe = [
   },
   {
     name: 'ΨΗΦΙΑΚΑ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '402',
     semester: 4,
     grade: 6,
@@ -162,6 +185,7 @@ const oldIdpe = [
   },
   {
     name: 'ΚΛΩΣΤΟΫΦΑΝΤΟΥΡΓΙΚΗ ΒΙΟΜΗΧΑΝΙΑ',
+    program: 'idpe63',
     id: '403',
     semester: 4,
     grade: 9,
@@ -169,6 +193,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΗ ΚΑΙ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΣΥΣΤΗΜΑΤΩΝ ΕΦΟΔΙΑΣΜΟΥ (LOGISTICS)',
+    program: 'idpe63',
     id: '404',
     semester: 4,
     grade: '-',
@@ -176,6 +201,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΥΣΤΗΜΑΤΑ ΣΥΛΛΟΓΗΣ ΔΕΔΟΜΕΝΩΝ – ΑΙΣΘΗΤΗΡΕΣ',
+    program: 'idpe63',
     id: '405',
     semester: 4,
     grade: 7,
@@ -183,6 +209,7 @@ const oldIdpe = [
   },
   {
     name: 'ΠΕΡΙΒΑΛΛΟΝΤΙΚΗ ΑΝΑΛΥΣΗ ΚΑΙ ΣΧΕΔΙΑΣΜΟΣ',
+    program: 'idpe63',
     id: '406',
     semester: 4,
     grade: 7.2,
@@ -190,6 +217,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΜΟΣ ΠΑΡΑΓΩΓΗΣ ΠΡΟΪΟΝΤΩΝ ΚΑΙ ΥΠΗΡΕΣΙΩΝ',
+    program: 'idpe63',
     id: '407',
     semester: 4,
     grade: 5.4,
@@ -197,6 +225,7 @@ const oldIdpe = [
   },
   {
     name: 'ΘΕΡΜΟΔΥΝΑΜΙΚΗ ΚΑΙ ΜΕΤΑΔΟΣΗ ΘΕΡΜΟΤΗΤΑΣ',
+    program: 'idpe63',
     id: '501',
     semester: 5,
     grade: '-',
@@ -204,6 +233,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΕΘΟΔΟΙ ΒΕΛΤΙΣΤΟΠΟΙΗΣΗΣ',
+    program: 'idpe63',
     id: '503',
     semester: 5,
     grade: 7.5,
@@ -211,6 +241,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΟΛΟΓΙΑ ΠΑΡΑΓΩΓΗΣ Ι',
+    program: 'idpe63',
     id: '504',
     semester: 5,
     grade: '-',
@@ -218,6 +249,7 @@ const oldIdpe = [
   },
   {
     name: 'ΔΙΚΤΥΑ ΥΠΟΛΟΓΙΣΤΩΝ',
+    program: 'idpe63',
     id: '505',
     semester: 5,
     grade: 8,
@@ -225,6 +257,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΥΣΤΗΜΑΤΑ ΑΥΤΟΜΑΤΟΥ ΕΛΕΓΧΟΥ (ΣΑΕ) Ι',
+    program: 'idpe63',
     id: '506',
     semester: 5,
     grade: 5,
@@ -232,6 +265,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΡΓΟΝΟΜΙΑ ΚΑΙ ΑΣΦΑΛΕΙΑ ΕΡΓΑΣΙΑΣ',
+    program: 'idpe63',
     id: '507',
     semester: 5,
     grade: '-',
@@ -239,6 +273,7 @@ const oldIdpe = [
   },
   {
     name: 'ΗΛΕΚΤΡΙΚΑ, ΥΔΡΑΥΛΙΚΑ ΠΝΕΥΜΑΤΙΚΑ ΣΑΕ',
+    program: 'idpe63',
     id: '508',
     semester: 5,
     grade: 7,
@@ -246,6 +281,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΟΛΟΓΙΑ ΠΑΡΑΓΩΓΗΣ ΙΙ',
+    program: 'idpe63',
     id: '601',
     semester: 6,
     grade: '-',
@@ -253,6 +289,7 @@ const oldIdpe = [
   },
   {
     name: 'ΔΙΟΙΚΗΣΗ ΟΛΙΚΗΣ ΠΟΙΟΤΗΤΑΣ',
+    program: 'idpe63',
     id: '602',
     semester: 6,
     grade: 7,
@@ -260,6 +297,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΥΣΤΗΜΑΤΑ ΥΠΟΣΤΗΡΙΞΗΣ ΑΠΟΦΑΣΕΩΝ',
+    program: 'idpe63',
     id: '603',
     semester: 6,
     grade: '-',
@@ -267,6 +305,7 @@ const oldIdpe = [
   },
   {
     name: 'ΥΛΙΚΑ ΙΙ',
+    program: 'idpe63',
     id: '604',
     semester: 6,
     grade: 5,
@@ -274,6 +313,7 @@ const oldIdpe = [
   },
   {
     name: 'ΡΕΥΣΤΟΜΗΧΑΝΙΚΗ',
+    program: 'idpe63',
     id: '605',
     semester: 6,
     grade: '-',
@@ -281,6 +321,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΗΧΑΤΡΟΝΙΚΗ',
+    program: 'idpe63',
     id: '606',
     semester: 6,
     grade: 7.2,
@@ -288,6 +329,7 @@ const oldIdpe = [
   },
   {
     name: 'ΟΙΚΟΝΟΜΙΚΑ ΤΩΝ ΕΠΙΧΕΙΡΗΣΕΩΝ - ΕΠΙΧΕΙΡΗΜΑΤΙΚΟΤΗΤΑ',
+    program: 'idpe63',
     id: '607',
     semester: 6,
     grade: 7,
@@ -295,6 +337,7 @@ const oldIdpe = [
   },
   {
     name: 'ΟΡΓΑΝΩΣΗ ΚΑΙ ΔΙΟΙΚΗΣΗ ΕΠΙΧΕΙΡΗΣΕΩΝ',
+    program: 'idpe63',
     id: '701',
     semester: 7,
     grade: '-',
@@ -302,6 +345,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΥΣΤΗΜΑΤΑ ΔΙΑΧΕΙΡΙΣΗΣ ΕΝΕΡΓΕΙΑΣ - ΑΝΑΝΕΩΣΙΜΕΣ ΠΗΓΕΣ ΕΝΕΡΓΕΙΑΣ',
+    program: 'idpe63',
     id: '711',
     semester: 7,
     grade: 5.4,
@@ -309,6 +353,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΗ ΣΥΣΤΗΜΑΤΩΝ ΜΕ ΜΙΚΡΟΕΛΕΓΚΤΕΣ',
+    program: 'idpe63',
     id: '712',
     semester: 7,
     grade: 6.5,
@@ -316,6 +361,7 @@ const oldIdpe = [
   },
   {
     name: 'ΨΗΦΙΑΚΑ ΕΛΕΓΧΟΜΕΝΕΣ ΚΑΤΕΡΓΑΣΙΕΣ – CNC',
+    program: 'idpe63',
     id: '713',
     semester: 7,
     grade: 9,
@@ -323,6 +369,7 @@ const oldIdpe = [
   },
   {
     name: 'ΠΡΟΣΘΕΤΙΚΕΣ ΚΑΤΕΡΓΑΣΙΕΣ ΠΑΡΑΓΩΓΗΣ - 3D PRINTING',
+    program: 'idpe63',
     id: '714',
     semester: 7,
     grade: 9,
@@ -330,6 +377,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΥΦΥΕΣ ΠΛΕΓΜΑ - ΗΛΕΚΤΡΟΝΙΚΑ ΙΣΧΥΟΣ',
+    program: 'idpe63',
     id: '715',
     semester: 7,
     grade: 5.4,
@@ -337,6 +385,7 @@ const oldIdpe = [
   },
   {
     name: 'ΨΗΦΙΑΚΗ ΕΠΕΞΕΡΓΑΣΙΑ ΣΗΜΑΤΟΣ',
+    program: 'idpe63',
     id: '716',
     semester: 7,
     grade: '-',
@@ -344,6 +393,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΜΟΣ ΗΛΕΚΤΡΟΜΗΧΑΝΟΛΟΓΙΚΩΝ ΕΓΚΑΤΑΣΤΑΣΕΩΝ',
+    program: 'idpe63',
     id: '718',
     semester: 7,
     grade: 5,
@@ -351,6 +401,7 @@ const oldIdpe = [
   },
   {
     name: 'ΑΛΛΗΛΕΠΙΔΡΑΣΗ ΑΝΘΡΩΠΟΥ – ΜΗΧΑΝΗΣ',
+    program: 'idpe63',
     id: '719',
     semester: 7,
     grade: '-',
@@ -358,12 +409,14 @@ const oldIdpe = [
   },
   {
     name: 'ΗΛΕΚΤΡΙΚΕΣ ΜΗΧΑΝΕΣ',
+    program: 'idpe63',
     id: '720',
     semester: 7,
     grade: 5,
     passes: ['8002'],
   },
   {
+    program: 'idpe63',
     id: '721',
     name: 'ΦΥΣΙΚΟΧΗΜΕΙΑ',
     semester: 7,
@@ -371,6 +424,7 @@ const oldIdpe = [
     passes: ['1002'],
   },
   {
+    program: 'idpe63',
     id: '722',
     name: 'ΔΙΑΧΕΙΡΙΣΗ ΠΑΡΑΠΡΟΪΟΝΤΩΝ ΚΑΙ ΠΕΡΙΒΑΛΛΟΝ',
     semester: 7,
@@ -378,6 +432,7 @@ const oldIdpe = [
     passes: ['7005'],
   },
   {
+    program: 'idpe63',
     id: '723',
     name: 'ΣΧΕΔΙΑΣΜΟΣ ΠΡΟΪΟΝΤΩΝ ΕΝΔΥΣΗΣ',
     semester: 7,
@@ -385,6 +440,7 @@ const oldIdpe = [
     passes: ['7010'],
   },
   {
+    program: 'idpe63',
     id: '724',
     name: 'ΕΠΙΣΤΗΜΗ ΙΝΩΝ',
     semester: 7,
@@ -392,6 +448,7 @@ const oldIdpe = [
     passes: ['7006'],
   },
   {
+    program: 'idpe63',
     id: '725',
     name: 'ΒΑΦΙΚΕΣ ΔΙΕΡΓΑΣΙΕΣ Ι',
     semester: 7,
@@ -399,6 +456,7 @@ const oldIdpe = [
     passes: ['6005'],
   },
   {
+    program: 'idpe63',
     id: '726',
     name: 'ΣΧΕΔΙΑΣΗ ΠΡΟΪΟΝΤΩΝ ΕΥΚΑΜΠΤΗΣ ΔΟΜΗΣ ΜΕ CAD',
     semester: 7,
@@ -406,6 +464,7 @@ const oldIdpe = [
     passes: ['4003', '9008'],
   },
   {
+    program: 'idpe63',
     id: '727',
     name: 'ΠΡΟΗΓΜΕΝΑ ΥΛΙΚΑ',
     semester: 7,
@@ -413,6 +472,7 @@ const oldIdpe = [
     passes: ['7007', '5005'],
   },
   {
+    program: 'idpe63',
     id: '728',
     name: 'ΣΧΕΔΙΑΣΜΟΣ ΠΑΡΑΓΩΓΗΣ ΓΡΑΜΜΙΚΩΝ ΙΝΟΔΟΜΩΝ',
     semester: 7,
@@ -421,6 +481,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ',
+    program: 'idpe63',
     id: '801',
     semester: 8,
     grade: 6.5,
@@ -428,6 +489,7 @@ const oldIdpe = [
   },
   {
     name: 'ΙΣΤΟΡΙΚΗ ΕΞΕΛΙΞΗ ΤΟΥ ΑΥΤΟΜΑΤΙΣΜΟΥ ΚΑΙ ΝΕΕΣ ΤΕΧΝΟΛΟΓΙΕΣ',
+    program: 'idpe63',
     id: '811',
     semester: 8,
     grade: '-',
@@ -435,6 +497,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΥΣΤΗΜΑΤΑ ΑΥΤΟΜΑΤΟΥ ΕΛΕΓΧΟΥ (ΣΑΕ) ΙΙ',
+    program: 'idpe63',
     id: '812',
     semester: 8,
     grade: '-',
@@ -442,6 +505,7 @@ const oldIdpe = [
   },
   {
     name: 'ΝΑΝΟΗΛΕΚΤΡΟΝΙΚΗ ΚΑΙ ΔΙΑΤΑΞΕΙΣ',
+    program: 'idpe63',
     id: '813',
     semester: 8,
     grade: '-',
@@ -449,6 +513,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΦΑΡΜΟΓΕΣ ΤΟΥ ΔΙΑΔΙΚΤΥΟΥ ΣΤΗΝ ΠΑΡΑΓΩΓΗ',
+    program: 'idpe63',
     id: '814',
     semester: 8,
     grade: '-',
@@ -456,6 +521,7 @@ const oldIdpe = [
   },
   {
     name: 'ΔΙΑΔΙΚΤΥΟ ΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ - ΕΝΣΩΜΑΤΩΜΕΝΑ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '815',
     semester: 8,
     grade: 5,
@@ -463,6 +529,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΗ ΚΑΙ ΕΦΑΡΜΟΓΕΣ ΑΥΤΟΚΙΝΟΥΜΕΝΩΝ ΟΧΗΜΑΤΩΝ',
+    program: 'idpe63',
     id: '816',
     semester: 8,
     grade: 5,
@@ -470,6 +537,7 @@ const oldIdpe = [
   },
   {
     name: 'ΤΕΧΝΗ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ',
+    program: 'idpe63',
     id: '817',
     semester: 8,
     grade: '-',
@@ -477,6 +545,7 @@ const oldIdpe = [
   },
   {
     name: 'ΔΙΑΧΕΙΡΙΣΗ ΣΥΣΤΗΜΑΤΩΝ ΜΕΤΑΦΟΡΩΝ',
+    program: 'idpe63',
     id: '818',
     semester: 8,
     grade: '-',
@@ -484,12 +553,14 @@ const oldIdpe = [
   },
   {
     name: 'ΒΙΟΜΗΧΑΝΙΚΟΙ ΑΥΤΟΜΑΤΙΣΜΟΙ - PLC',
+    program: 'idpe63',
     id: '819',
     semester: 8,
     grade: '-',
     passes: ['8002'],
   },
   {
+    program: 'idpe63',
     id: '821',
     name: 'ΦΑΙΝΟΜΕΝΑ ΜΕΤΑΦΟΡΑΣ ',
     grade: '-',
@@ -497,6 +568,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '822',
     name: 'EΛΕΓΧΟΣ ΠΟΙΟΤΗΤΑΣ',
     grade: '-',
@@ -504,6 +576,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '823',
     name: 'ΣΥΝΘΕΤΑ ΥΛΙΚΑ ',
     grade: '-',
@@ -511,6 +584,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '824',
     name: 'ΠΑΡΑΓΩΓΗ ΠΡΟΪΟΝΤΩΝ ΕΥΚΑΜΠΤΗΣ ΔΟΜΗΣ',
     grade: '-',
@@ -518,6 +592,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '825',
     name: 'ΒΑΦΙΚΕΣ ΔΙΕΡΓΑΣΙΕΣ ΙΙ ',
     grade: '-',
@@ -525,6 +600,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '826',
     name: 'ΠΑΡΑΓΩΓΗ ΔΙΣΔΙΑΣΤΑΤΩΝ ΙΝΟΔΟΜΙΚΩΝ ΠΡΟΪΟΝΤΩΝ ',
     grade: '-',
@@ -532,6 +608,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '827',
     name: 'ΨΗΦΙΑΚΗ ΕΚΤΥΠΩΣΗ ΚΑΙ ΤΥΠΟΒΑΦΙΚΗ',
     grade: '-',
@@ -539,6 +616,7 @@ const oldIdpe = [
     semester: 8,
   },
   {
+    program: 'idpe63',
     id: '830',
     name: 'ΕΥΦΥΗ ΥΛΙΚΑ ΚΑΙ ΤΕΧΝΟΛΟΓΙΕΣ ΑΛΛΗΛΕΠΙΔΡΑΣΗΣ',
     grade: '-',
@@ -547,6 +625,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΑΡΚΕΤΙΝΓΚ',
+    program: 'idpe63',
     id: '901',
     semester: 9,
     grade: '-',
@@ -554,6 +633,7 @@ const oldIdpe = [
   },
   {
     name: 'ΕΥΦΥΗ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '911',
     semester: 9,
     grade: '-',
@@ -561,6 +641,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΕΘΟΔΟΙ ΨΗΦΙΑΚΟΥ ΕΛΕΓΧΟΥ ΚΑΙ ΠΑΡΑΤΗΡΗΣΗΣ',
+    program: 'idpe63',
     id: '912',
     semester: 9,
     grade: '-',
@@ -568,6 +649,7 @@ const oldIdpe = [
   },
   {
     name: 'ΔΥΝΑΜΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ',
+    program: 'idpe63',
     id: '913',
     semester: 9,
     grade: 8.4,
@@ -575,6 +657,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΗΧΑΝΙΚΗ ΜΑΘΗΣΗ - ΑΝΑΛΥΣΗ ΜΕΓΑΛΩΝ ΔΕΔΟΜΕΝΩΝ',
+    program: 'idpe63',
     id: '914',
     semester: 9,
     grade: '-',
@@ -582,6 +665,7 @@ const oldIdpe = [
   },
   {
     name: 'ΣΧΕΔΙΑΣΗ ΕΦΑΡΜΟΓΩΝ ΦΟΡΗΤΩΝ ΣΥΣΚΕΥΩΝ',
+    program: 'idpe63',
     id: '915',
     semester: 9,
     grade: 7,
@@ -589,6 +673,7 @@ const oldIdpe = [
   },
   {
     name: 'ΒΙΟΜΗΧΑΝΙΚΑ ΡΟΜΠΟΤΙΚΑ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '916',
     semester: 9,
     grade: '-',
@@ -596,6 +681,7 @@ const oldIdpe = [
   },
   {
     name: 'ΜΗ ΚΑΤΑΣΤΡΟΦΙΚΟΣ ΕΛΕΓΧΟΣ ΣΥΣΤΗΜΑΤΩΝ',
+    program: 'idpe63',
     id: '917',
     semester: 9,
     grade: '-',
@@ -603,12 +689,14 @@ const oldIdpe = [
   },
   {
     name: 'ΚΥΒΕΡΝΟΦΥΣΙΚΑ ΣΥΣΤΗΜΑΤΑ',
+    program: 'idpe63',
     id: '918',
     semester: 9,
     grade: 6.5,
     passes: ['9007'],
   },
   {
+    program: 'idpe63',
     id: '921',
     name: 'ΕΞΕΥΓΕΝΙΣΜΟΣ ΚΑΙ ΔΙΑΔΡΑΣΤΙΚΑ ΠΡΟΪΟΝΤΑ',
     semester: 9,
@@ -616,6 +704,7 @@ const oldIdpe = [
     passes: ['9011'],
   },
   {
+    program: 'idpe63',
     id: '923',
     name: 'ΜΗΧΑΝΙΣΜΟΙ ΑΠΟΧΡΩΜΑΤΙΣΜΟΥ ΚΑΙ ΛΕΥΚΑΝΣΗΣ',
     semester: 9,
@@ -623,6 +712,7 @@ const oldIdpe = [
     passes: ['8002', '9007'],
   },
   {
+    program: 'idpe63',
     id: '924',
     name: 'ΤΡΙΣΔΙΑΣΤΑΤΕΣ ΠΟΛΥΣΤΡΩΜΑΤΙΚΕΣ ΔΟΜΕΣ ',
     semester: 9,
@@ -630,6 +720,7 @@ const oldIdpe = [
     passes: ['8001'],
   },
   {
+    program: 'idpe63',
     id: '925',
     name: 'ΜΗΧΑΝΙΚΗ ΠΑΡΑΜΟΡΦΩΣΗΣ ΙΝΟΔΟΜΩΝ – ΠΡΟΗΓΜΕΝΟΣ ΕΛΕΓΧΟΣ ΠΟΙΟΤΗΤΑΣ',
     semester: 9,
@@ -637,6 +728,7 @@ const oldIdpe = [
     passes: ['8005'],
   },
   {
+    program: 'idpe63',
     id: '926',
     name: 'ΠΑΡΑΓΩΓΗ ΕΞΕΙΔΙΚΕΥΜΕΝΩΝ ΠΡΟΪΟΝΤΩΝ',
     semester: 9,
@@ -644,6 +736,7 @@ const oldIdpe = [
     passes: ['7008'],
   },
   {
+    program: 'idpe63',
     id: '930',
     name: 'ΣΧΕΔΙΑΣΜΟΣ ΚΑΙ ΑΝΑΠΤΥΞΗ ΣΥΛΛΟΓΗΣ ΠΡΟΪΟΝΤΩΝ',
     semester: 9,
@@ -652,4 +745,4 @@ const oldIdpe = [
   },
 ];
 
-export default oldIdpe;
+export default idpe63;

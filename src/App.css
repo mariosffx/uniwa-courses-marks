@@ -1,43 +1,70 @@
 body {
   font-family: sans-serif;
+  font-size: 1.2em;
 }
 
-.textLeft {
-  text-align: left;
-}
-
-.textCenter {
-  text-align: center;
-}
-
-.table {
-  padding: 5px;
-  border: 1px solid black;
-  margin: 20px 5px;
-  width: 70vw;
-  border-collapse: collapse;
-}
-
-.semesterHeading {
-  padding: 5px;
-  background-color: cyan;
-}
-
-.courses {
-  display: flex;
-  justify-content: space-around;
-  max-width: 70vw;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-tr {
-  border: 2px solid blue;
-  padding: 8px;
+th {
+  padding: 15px;
+  background-color: orange;
 }
 
 th,
 td {
+  border: 3px solid black;
+}
+
+td {
+  padding: 2px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.subCourses {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.subCourses > tbody > tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px black solid;
+}
+
+.subCourses > tbody > tr > td,
+.subCourses > tbody > tr:last-child {
+  border: 0 !important;
+}
+
+.gradeInput,
+.gradeCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  height: 100px;
   border: 1px solid black;
-  padding: 4px;
+}
+
+.gradeInput {
+  display: block;
+  color: white;
+  background-color: blue;
+}
+
+.passedGradeCell {
+  background-color: green;
+  color: white;
+}
+
+.failedGradeCell {
+  background-color: red;
+  color: white;
+}
+.gradeCell {
+  background-color: white;
+  color: black;
 }
