@@ -38,23 +38,6 @@ table {
   border: 0 !important;
 }
 
-.gradeInput,
-.gradeCell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  text-align: center;
-  height: 100px;
-  border: 1px solid black;
-}
-
-.gradeInput {
-  display: block;
-  color: white;
-  background-color: blue;
-}
-
 .passedGradeCell {
   background-color: green;
   color: white;
@@ -64,7 +47,26 @@ table {
   background-color: red;
   color: white;
 }
+
+.noGradeCell {
+}
+
 .gradeCell {
-  background-color: white;
-  color: black;
+}
+
+.inputCell {
+  background-color: blue;
+  color: white;
+}
+
+.gradeInput {
+  font-size: 1.2em;
+  border-width: 0;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+.dynamicCell {
+  height: 100%;
 }

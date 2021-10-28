@@ -4,7 +4,7 @@ const TableHeader = ({ headings }) => {
   ));
   return (
     <thead>
-      <tr>{headingItems}</tr>
+      <tr className="tableRow">{headingItems}</tr>
     </thead>
   );
 };

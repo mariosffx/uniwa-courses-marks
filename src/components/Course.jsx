@@ -22,19 +22,23 @@ const Course = ({
   const passesItems =
     passes.length > 0 ? <SubCourses codes={passes} courses={courses} /> : '-';
 
-  const filteredCourses = courses.filter((course) =>
-    passesFrom.includes(course.id)
-  );
+  let dynamicGradeStyle = 'gradeCell';
 
-  const gradeCourses =
-    filteredCourses.length > 0
-      ? filteredCourses
-          .filter((course) => course.grade > 0)
-          .map((course) => course.grade)
-      : [];
+  if (program === 'idpe54' && grade >= 5) {
+    dynamicGradeStyle = 'passedGradeCell';
+  }
 
-  const finalGrade =
-    gradeCourses.length > 0 ? Math.max(...gradeCourses) : grade;
+  if (program === 'idpe54' && grade < 5) {
+    dynamicGradeStyle = 'failedGradeCell';
+  }
+  if (program === 'idpe54' && !grade) {
+    dynamicGradeStyle = 'noGradeCell';
+  }
+
+  let dynamicInputStyle = '';
+  if (program !== 'idpe54') {
+    dynamicInputStyle = 'inputCell';
+  }
 
   const renderInput =
     program === 'idpe63' ? (
@@ -42,31 +46,18 @@ const Course = ({
         className="gradeInput"
         name={id}
         onChange={onChange}
-        value={finalGrade}
+        value={grade}
         type="number"
         min="0"
         max="10"
+        step="0.1"
       />
     ) : (
-      finalGrade
+      grade
     );
 
-  let dynamicGradeStyle = 'gradeCell';
-
-  if (program === 'idpe63') {
-    dynamicGradeStyle = 'gradeInput';
-  }
-
-  if (program !== 'idpe63' && finalGrade >= 5) {
-    dynamicGradeStyle = 'passedGradeCell';
-  }
-
-  if (program !== 'idpe63' && finalGrade < 5) {
-    dynamicGradeStyle = 'failedGradeCell';
-  }
-  
   return (
-    <tr>
+    <tr className={`tableRow ${dynamicGradeStyle}`}>
       <td>{id}</td>
       <td>{name}</td>
       <td>{type}</td>
@@ -74,7 +65,11 @@ const Course = ({
       <td>{programMapping[program]}</td>
       <td className="subCoursesCell">{passesFromItems}</td>
       <td className="subCoursesCell">{passesItems}</td>
-      <td className={dynamicGradeStyle}>{renderInput}</td>
+      <td
+        className={program === 'idpe63' ? dynamicInputStyle : dynamicGradeStyle}
+      >
+        {renderInput}
+      </td>
     </tr>
   );
 };
