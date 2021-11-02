@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import coursesData from './data/courses/coursesData';
 import getLocalStorageOrDefault from './hooks/getLocalStorageOrDefault';
 import ProgramCourses from './components/ProgramCourse';
-import Summary from './components/Summary';
 
 function App() {
   const [grades, setGrades] = useState(getLocalStorageOrDefault('grades', {}));
