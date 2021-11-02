@@ -5,7 +5,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΓΡΑΜΜΙΚΗ ΑΛΓΕΒΡΑ',
     semester: 1,
-    passesFrom: ['101', '105'],
+    passesFrom: ['101', '105', 'a1001'],
   },
   {
     program: 'idpe54',
@@ -13,7 +13,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΓΕΝΙΚΗ ΦΥΣΙΚΗ',
     semester: 1,
-    passesFrom: ['102', '202'],
+    passesFrom: ['102', '202', 'a1002'],
   },
   {
     program: 'idpe54',
@@ -21,7 +21,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Η/Υ',
     semester: 1,
-    passesFrom: ['103'],
+    passesFrom: ['103', 'a1003'],
   },
   {
     program: 'idpe54',
@@ -29,7 +29,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΜΗΧΑΝΟΛΟΓΙΚΟ ΣΧΕΔΙΟ',
     semester: 1,
-    passesFrom: ['104'],
+    passesFrom: ['104', 'a1005'],
   },
   {
     program: 'idpe54',
@@ -37,7 +37,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΘΕΩΡΙΑ ΚΑΙ ΜΕΘΟΔΟΛΟΓΙΑ ΣΧΕΔΙΑΣΗΣ',
     semester: 1,
-    passesFrom: ['107', '407'],
+    passesFrom: ['107', '407', 'a1506'],
   },
   {
     program: 'idpe54',
@@ -45,7 +45,7 @@ const idpe54 = [
     type: 'Υ-1',
     name: 'ΗΛΕΚΤΡΙΚΑ ΚΥΚΛΩΜΑΤΑ',
     semester: 1,
-    passesFrom: ['106'],
+    passesFrom: ['106', 'a1004', 'a1204'],
   },
   {
     program: 'idpe54',
@@ -69,7 +69,7 @@ const idpe54 = [
     type: 'Υ-2',
     name: 'ΑΛΓΟΡΙΘΜΟΙ ΚΑΙ ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ',
     semester: 2,
-    passesFrom: ['203'],
+    passesFrom: ['203', 'a1203'],
   },
   {
     program: 'idpe54',
@@ -77,7 +77,7 @@ const idpe54 = [
     type: 'Υ-2',
     name: 'ΔΙΑΦΟΡΙΚΟΣ ΚΑΙ ΟΛΟΚΛΗΡΩΤΙΚΟΣ ΛΟΓΙΣΜΟΣ Ι',
     semester: 2,
-    passesFrom: ['201', '205'],
+    passesFrom: ['201', '205', 'a1201'],
   },
   {
     program: 'idpe54',
@@ -85,7 +85,7 @@ const idpe54 = [
     type: 'Υ-2',
     name: 'ΤΕΧΝΟΛΟΓΙΑ ΜΕΤΡΗΣΕΩΝ ΚΑΙ ΑΙΣΘΗΤΗΡΩΝ',
     semester: 2,
-    passesFrom: ['206'],
+    passesFrom: ['206', 'a1402'],
   },
   {
     program: 'idpe54',
@@ -109,7 +109,7 @@ const idpe54 = [
     type: 'Υ-3',
     name: 'ΣΧΕΔΙΑΣΗ ΚΑΙ ΠΑΡΑΓΩΓΗ ΜΕ ΤΗΝ ΒΟΗΘΕΙΑ Η/Υ (CAD/CAM)',
     semester: 3,
-    passesFrom: ['303'],
+    passesFrom: ['303', 'a1405'],
   },
   {
     program: 'idpe54',
@@ -133,7 +133,7 @@ const idpe54 = [
     type: 'Υ-3',
     name: 'ΗΛΕΚΤΡΟΝΙΚΗ',
     semester: 3,
-    passesFrom: ['306'],
+    passesFrom: ['306', 'a1205'],
   },
   {
     program: 'idpe54',
@@ -141,7 +141,7 @@ const idpe54 = [
     type: 'Υ-3',
     name: 'ΑΝΑΛΥΣΗ ΣΥΣΤΗΜΑΤΩΝ ΚΑΙ ΣΗΜΑΤΩΝ',
     semester: 3,
-    passesFrom: ['307', '716'],
+    passesFrom: ['307', '716', 'a1106', 'a1606'],
   },
   {
     program: 'idpe54',
@@ -157,7 +157,7 @@ const idpe54 = [
     type: 'Υ-4',
     name: 'ΣΤΑΤΙΣΤΙΚΗ ΚΑΙ ΠΙΘΑΝΟΤΗΤΕΣ ΓΙΑ ΜΗΧΑΝΙΚΟΥΣ',
     semester: 4,
-    passesFrom: ['302'],
+    passesFrom: ['302', 'a1301'],
   },
   {
     program: 'idpe54',
@@ -173,7 +173,7 @@ const idpe54 = [
     type: 'Υ-4',
     name: 'ΣΥΛΛΟΓΗ ΚΑΙ ΑΝΑΛΥΣΗ ΔΕΔΟΜΕΝΩΝ',
     semester: 4,
-    passesFrom: ['405'],
+    passesFrom: ['405', 'a1503'],
   },
   {
     program: 'idpe54',
@@ -189,7 +189,7 @@ const idpe54 = [
     type: 'Υ-4',
     name: 'ΕΡΓΟΝΟΜΙΚΗ ΑΝΑΛΥΣΗ ΚΑΙ ΣΧΕΔΙΑΣΜΟΣ',
     semester: 4,
-    passesFrom: ['507'],
+    passesFrom: ['507', 'a1406'],
   },
   {
     program: 'idpe54',
@@ -197,7 +197,7 @@ const idpe54 = [
     type: 'Υ-5',
     name: 'ΣΧΕΔΙΑΣΗ ΒΙΟΜΗΧΑΝΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ ΚΙΝΗΣΗΣ',
     semester: 5,
-    passesFrom: ['508'],
+    passesFrom: ['508', 'a1501', 'a1502'],
   },
   {
     program: 'idpe54',
@@ -205,7 +205,7 @@ const idpe54 = [
     type: 'Υ-5',
     name: 'ΜΕΘΟΔΟΙ ΒΕΛΤΙΣΤΟΠΟΙΗΣΗΣ',
     semester: 5,
-    passesFrom: ['503'],
+    passesFrom: ['503', 'a1612'],
   },
   {
     program: 'idpe54',
@@ -221,7 +221,7 @@ const idpe54 = [
     type: 'Υ-5',
     name: 'ΣΥΣΤΗΜΑΤΑ ΑΥΤΟΜΑΤΟΥ ΕΛΕΓΧΟΥ (ΣΑΕ) Ι',
     semester: 5,
-    passesFrom: ['506'],
+    passesFrom: ['506', 'a1304'],
   },
   {
     program: 'idpe54',
@@ -269,7 +269,7 @@ const idpe54 = [
     type: 'Υ-6',
     name: 'ΣΧΕΔΙΑΣΗ ΣΥΣΤΗΜΑΤΩΝ ΜΕ ΜΙΚΡΟΕΛΕΓΚΤΕΣ',
     semester: 6,
-    passesFrom: ['402', '712'],
+    passesFrom: ['402', '712', 'a1202', 'a1303', 'a1404'],
   },
   {
     program: 'idpe54',
@@ -285,7 +285,7 @@ const idpe54 = [
     type: 'Υ-6',
     name: 'ΤΕΧΝΟΛΟΓΙΑ ΔΙΑΔΙΚΤΥΟΥ ΣΤΗΝ ΨΗΦΙΑΚΗ ΒΙΟΜΗΧΑΝΙΑ',
     semester: 6,
-    passesFrom: ['814', '505'],
+    passesFrom: ['814', '505', 'a1604', 'a1702', 'a1707'],
   },
   {
     program: 'idpe54',
@@ -293,7 +293,7 @@ const idpe54 = [
     type: 'Y-7',
     name: 'ΜΗΧΑΤΡΟΝΙΚΗ',
     semester: 7,
-    passesFrom: ['606'],
+    passesFrom: ['606', 'a1605'],
   },
   {
     program: 'idpe54',
@@ -301,7 +301,7 @@ const idpe54 = [
     type: 'Y-7',
     name: 'ΠΛΗΡΟΦΟΡΙΑΚΑ ΣΥΣΤΗΜΑΤΑ ΠΑΡΑΓΩΓΗΣ',
     semester: 7,
-    passesFrom: ['207'],
+    passesFrom: ['207', 'a1701'],
   },
   {
     program: 'idpe54',
@@ -309,7 +309,7 @@ const idpe54 = [
     type: 'Y-7',
     name: 'ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ',
     semester: 7,
-    passesFrom: ['801'],
+    passesFrom: ['801', 'a1608'],
   },
   {
     program: 'idpe54',
@@ -317,7 +317,7 @@ const idpe54 = [
     type: 'EY-7',
     name: 'ΕΠΙΧΕΙΡΗΜΑΤΙΚΟΤΗΤΑ ΚΑΙ ΔΙΟΙΚΗΣΗ ΚΑΙΝΟΤΟΜΙΑΣ',
     semester: 7,
-    passesFrom: ['607'],
+    passesFrom: ['607', 'a1610'],
   },
   {
     program: 'idpe54',
@@ -333,7 +333,7 @@ const idpe54 = [
     type: 'EY-7',
     name: 'ΗΛΕΚΤΡΟΝΙΚΑ ΙΣΧΥΟΣ-ΕΥΦΥΕΣ ΠΛΕΓΜΑ',
     semester: 7,
-    passesFrom: ['715'],
+    passesFrom: ['715', 'a1408'],
   },
   {
     program: 'idpe54',
@@ -341,7 +341,7 @@ const idpe54 = [
     type: 'EY-7',
     name: 'ΣΧΕΔΙΑΣΗ ΗΛΕΚΤΡΟΜΗΧΑΝΟΛΟΓΙΚΩΝ ΕΓΚΑΤΑΣΤΑΣΕΩΝ ',
     semester: 7,
-    passesFrom: ['718'],
+    passesFrom: ['718', 'a1306'],
   },
   {
     program: 'idpe54',
@@ -365,7 +365,7 @@ const idpe54 = [
     type: 'EY-7',
     name: 'ΤΕΧΝΗ, ΤΕΧΝΟΛΟΓΙΑ ΚΑΙ ΠΟΛΙΤΙΣΜΟΣ',
     semester: 7,
-    passesFrom: ['811', '817'],
+    passesFrom: ['811', '817', 'a1006'],
   },
   {
     program: 'idpe54',
@@ -373,7 +373,7 @@ const idpe54 = [
     type: 'EY-7',
     name: 'ΑΓΓΛΙΚΗ ΟΡΟΛΟΓΙΑ Ι',
     semester: 7,
-    passesFrom: [],
+    passesFrom: ['a1507'],
   },
   {
     program: 'idpe54',
@@ -381,7 +381,7 @@ const idpe54 = [
     type: 'Y-8',
     name: 'ΠΡΟΣΘΕΤΙΚΕΣ ΚΑΤΕΡΓΑΣΙΕΣ ΠΑΡΑΓΩΓΗΣ - 3D PRINTING',
     semester: 8,
-    passesFrom: ['714'],
+    passesFrom: ['714', '801', 'a1716'],
   },
   {
     program: 'idpe54',
@@ -389,7 +389,7 @@ const idpe54 = [
     type: 'Y-8',
     name: 'ΒΙΟΜΗΧΑΝΙΚΟΙ ΑΥΤΟΜΑΤΙΣΜΟΙ - PLC',
     semester: 8,
-    passesFrom: ['720', '819'],
+    passesFrom: ['720', '819', 'a1407', 'a1603'],
   },
   {
     program: 'idpe54',
@@ -405,7 +405,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΣΥΣΤΗΜΑΤΑ ΑΥΤΟΜΑΤΟΥ ΕΛΕΓΧΟΥ (ΣΑΕ) ΙΙ',
     semester: 8,
-    passesFrom: ['812'],
+    passesFrom: ['812', 'a1401'],
   },
   {
     program: 'idpe54',
@@ -413,7 +413,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΜΗ ΚΑΤΑΣΤΡΟΦΙΚΟΣ ΕΛΕΓΧΟΣ',
     semester: 8,
-    passesFrom: ['917'],
+    passesFrom: ['917', 'a1720'],
   },
   {
     program: 'idpe54',
@@ -421,7 +421,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΔΙΑΔΙΚΤΥΟ ΤΩΝ ΠΡΑΓΜΑΤΩΝ (ΙοΤ)',
     semester: 8,
-    passesFrom: ['815'],
+    passesFrom: ['815', 'a1601'],
   },
   {
     program: 'idpe54',
@@ -429,7 +429,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΚΑΙΝΟΤΟΜΙΚΗ ΣΧΕΔΙΑΣΗ ΚΑΙ ΑΕΙΦΟΡΙΑ',
     semester: 8,
-    passesFrom: ['406'],
+    passesFrom: ['406', 'a1713'],
   },
   {
     program: 'idpe54',
@@ -437,7 +437,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΕΥΦΥΗ ΣΥΣΤΗΜΑΤΑ',
     semester: 8,
-    passesFrom: ['911'],
+    passesFrom: ['911', 'a1710'],
   },
   {
     program: 'idpe54',
@@ -453,7 +453,7 @@ const idpe54 = [
     type: 'EY-8',
     name: 'ΣΧΕΔΙΑΣΗ ΚΑΙ ΑΝΑΠΤΥΞΗ ΝΑΝΟΔΙΑΤΑΞΕΩΝ',
     semester: 8,
-    passesFrom: ['813'],
+    passesFrom: ['813', 'a1721'],
   },
   {
     program: 'idpe54',
@@ -469,7 +469,7 @@ const idpe54 = [
     type: 'Y-9',
     name: 'ΡΟΜΠΟΤΙΚΗ',
     semester: 9,
-    passesFrom: ['713', '916'],
+    passesFrom: ['713', '801', '916', 'a1602', 'a1708'],
   },
   {
     program: 'idpe54',
@@ -485,7 +485,7 @@ const idpe54 = [
     type: 'ΕΥ-9',
     name: 'ΝΕΦΟΥΠΟΛΟΓΙΣΤΙΚΗ ΜΗΧΑΝΙΚΗ',
     semester: 9,
-    passesFrom: ['913'],
+    passesFrom: ['913', 'a1302'],
   },
   {
     program: 'idpe54',
@@ -509,7 +509,7 @@ const idpe54 = [
     type: 'EY-9',
     name: 'ΜΕΘΟΔΟΛΟΓΙΑ ΕΡΕΥΝΗΤΙΚΟΥ ΕΡΓΟΥ',
     semester: 9,
-    passesFrom: ['302'],
+    passesFrom: ['302', 'a1722'],
   },
   {
     program: 'idpe54',
@@ -533,7 +533,7 @@ const idpe54 = [
     type: 'EY-9',
     name: 'ΔΙΟΙΚΗΣΗ ΕΡΓΟΥ',
     semester: 9,
-    passesFrom: ['701'],
+    passesFrom: ['701', 'a1611'],
   },
   {
     program: 'idpe54',
@@ -541,7 +541,7 @@ const idpe54 = [
     type: 'EY-9',
     name: 'ΑΣΦΑΛΕΙΑ ΚΑΙ ΠΡΟΣΤΑΣΙΑ ΔΕΔΟΜΕΝΩΝ',
     semester: 9,
-    passesFrom: ['912'],
+    passesFrom: ['912', 'a1504'],
   },
   {
     program: 'idpe54',
@@ -549,7 +549,7 @@ const idpe54 = [
     type: 'ΕΥ-9',
     name: 'ΣΧΕΔΙΑΣΗ ΔΙΑΔΡΑΣΤΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ',
     semester: 9,
-    passesFrom: ['915'],
+    passesFrom: ['915', 'a1705'],
   },
 ];
 

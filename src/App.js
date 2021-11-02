@@ -1,83 +1,98 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { tableHeadings } from './data/text';
 import coursesData from './data/courses/coursesData';
 import getLocalStorageOrDefault from './hooks/getLocalStorageOrDefault';
 import ProgramCourses from './components/ProgramCourse';
 import Summary from './components/Summary';
 
 function App() {
-  const [courses, setCourses] = useState(
-    getLocalStorageOrDefault('courses', coursesData)
-  );
+  const [grades, setGrades] = useState(getLocalStorageOrDefault('grades', {}));
 
-  const courseGradeChangeHandler = (event) => {
-    const { name: id, value: grade } = event.target;
-    if (grade > 10) {
+  const gradeChangeHandler = (event) => {
+    const { name, value } = event.target;
+
+    if (value < 0 || value > 10) {
       return;
     }
+    const newGrades = { ...grades, [name]: Number(value) };
 
-    const editedCourses = [...courses];
-    const index = editedCourses.findIndex((course) => course.id === id);
-    editedCourses[index].grade = Number(grade);
-
-    editedCourses.forEach((course) => {
-      if (course.passesFrom) {
-        const passedFromGrades = [];
-        course.passesFrom.forEach((passedFromId) => {
-          const passesFromCourseIndex = editedCourses.findIndex(
-            (editedCourse) => editedCourse.id === passedFromId
-          );
-          const passesFromCourse = editedCourses[passesFromCourseIndex];
-          if (passesFromCourse.grade && passesFromCourse.grade > 0) {
-            passedFromGrades.push(passesFromCourse.grade);
+    const course = coursesData.find((courseItem) => courseItem.id === name);
+    if (course && course.passes) {
+      course.passes.forEach((passesCode) => {
+        const passesGrades = [];
+        const passedCourse = coursesData.find(
+          (courseItem) => courseItem.id === passesCode
+        );
+        passedCourse.passesFrom.forEach((passesFromCode) => {
+          if (newGrades[passesFromCode] !== undefined) {
+            passesGrades.push(Number(newGrades[passesFromCode]));
           }
         });
-        const maxGrade =
-          passedFromGrades.length > 0 ? Math.max(...passedFromGrades) : 0;
-        course.grade = maxGrade;
-      }
-    });
-    setCourses(() => editedCourses);
+        newGrades[passesCode] = Math.max(...passesGrades);
+      });
+    }
+    setGrades((prevGrades) => ({ ...prevGrades, ...newGrades }));
   };
 
   useEffect(() => {
-    localStorage.setItem('courses', JSON.stringify(courses));
-  }, [courses]);
+    localStorage.setItem('grades', JSON.stringify(grades));
+  }, [grades]);
+
+  const programOptions = [
+    {
+      name: 'Όλα τα Μαθήματα',
+      value: 'all',
+    },
+    {
+      name: 'Αυτοματισμού ΤΕΙ',
+      value: 'auto',
+    },
+    {
+      name: 'ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_63',
+      value: 'idpe63',
+    },
+    {
+      name: 'ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_54',
+      value: 'idpe54',
+    },
+  ];
+  const [coursesProgram, setProgramCourses] = useState(programOptions[0]);
+
+  const selectProgramHandler = (event) => {
+    const { value } = event.target;
+    const optionIndex = programOptions.find((option) => option.value === value);
+    setProgramCourses(optionIndex);
+  };
 
   return (
     <div>
+      <label htmlFor="filterProgram">Φιλτράρισμα Μαθημάτων</label> <br />
+      <select onChange={selectProgramHandler}>
+        {programOptions.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.name}
+          </option>
+        ))}
+      </select>
       <ProgramCourses
-        title="ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_63"
-        headings={tableHeadings}
-        courses={courses}
-        filterBy="idpe63"
-        onChange={courseGradeChangeHandler}
+        title={coursesProgram.name}
+        courses={coursesData}
+        filterBy={
+          coursesProgram.value !== 'all' ? coursesProgram.value : undefined
+        }
+        onChange={gradeChangeHandler}
+        grades={grades}
       />
-      <ProgramCourses
-        title="ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_54"
-        headings={tableHeadings}
-        courses={courses}
-        filterBy="idpe54"
-        onChange={courseGradeChangeHandler}
-      />
-      <ProgramCourses
-        title="Όλα τα Μαθήματα"
-        headings={tableHeadings}
-        courses={courses}
-        filterBy={null}
-        onChange={courseGradeChangeHandler}
-      />
-      <Summary
-        courses={courses}
+      {/* <Summary
+        courses={coursesData}
         filterBy="idpe63"
         title="Περασμένα ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_64"
       />
       <Summary
-        courses={courses}
+        courses={coursesData}
         filterBy="idpe54"
         title="Περασμένα ΜΑΘΗΜΑΤΑ 5ΕΤΟΥΣ ΠΠΣ ΠΑΔΑ_54"
-      />
+      /> */}
     </div>
   );
 }

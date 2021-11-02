@@ -1,4 +1,3 @@
-import { programMapping } from '../data/text';
 import SubCourses from './SubCourses';
 
 const Course = ({
@@ -9,18 +8,25 @@ const Course = ({
   program = '-',
   passesFrom = [],
   passes = [],
-  grade = '-',
   courses,
   onChange,
+  grades,
+  filterBy,
 }) => {
+  const grade = grades[id];
+
   const passesFromItems =
     passesFrom.length > 0 ? (
-      <SubCourses codes={passesFrom} courses={courses} />
+      <SubCourses codes={passesFrom} courses={courses} grades={grades} />
     ) : (
       '-'
     );
   const passesItems =
-    passes.length > 0 ? <SubCourses codes={passes} courses={courses} /> : '-';
+    passes.length > 0 ? (
+      <SubCourses codes={passes} courses={courses} grades={grades} />
+    ) : (
+      '-'
+    );
 
   let dynamicGradeStyle = 'gradeCell';
 
@@ -41,7 +47,7 @@ const Course = ({
   }
 
   const renderInput =
-    program === 'idpe63' ? (
+    program !== 'idpe54' ? (
       <input
         className="gradeInput"
         name={id}
@@ -60,11 +66,14 @@ const Course = ({
     <tr className={`tableRow ${dynamicGradeStyle}`}>
       <td>{id}</td>
       <td>{name}</td>
-      <td>{type}</td>
-      <td>{semester}</td>
-      <td>{programMapping[program]}</td>
-      <td className="subCoursesCell">{passesFromItems}</td>
-      <td className="subCoursesCell">{passesItems}</td>
+      {filterBy === 'idpe54' && <td>{type}</td>}
+      {filterBy === 'idpe54' && <td>{semester}</td>}
+      {filterBy === 'idpe54' && (
+        <td className="subCoursesCell">{passesFromItems}</td>
+      )}
+      {filterBy !== 'idpe54' && (
+        <td className="subCoursesCell">{passesItems}</td>
+      )}
       <td
         className={program === 'idpe63' ? dynamicInputStyle : dynamicGradeStyle}
       >

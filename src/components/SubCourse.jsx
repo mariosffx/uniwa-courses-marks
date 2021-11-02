@@ -1,4 +1,4 @@
-const SubCourse = ({ code, courses }) => {
+const SubCourse = ({ code, courses, grades }) => {
   const course = courses.find((subCourse) => subCourse.id === code);
 
   if (!course) {
@@ -9,13 +9,13 @@ const SubCourse = ({ code, courses }) => {
     );
   }
 
-  const { id, name, grade } = course;
+  const { id, name } = course;
 
   return (
     <tr>
       <td>{id}</td>
       <td>{name}</td>
-      <td>{grade}</td>
+      <td>{grades[id]}</td>
     </tr>
   );
 };
